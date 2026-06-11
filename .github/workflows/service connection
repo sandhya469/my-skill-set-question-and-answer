@@ -1,0 +1,40 @@
+Question: What is a Service Connection?
+Better Interview Answer
+
+A Service Connection is a secure authentication mechanism that acts as a bridge between Azure DevOps and Azure resources. It allows Azure DevOps pipelines t
+o connect to Azure and perform operations such as deploying resources, accessing Key Vault, Storage Accounts, AKS, and Resource Groups.
+
+Project-Based Answer
+
+In my project, we use a Service Connection to authenticate Azure DevOps with Azure. The pipeline uses the Service Connection to access Azure Key Vault, Storage Accounts, Resource Groups, and perfor
+m deployments securely without using personal user credentials.
+
+How it works
+Azure DevOps Pipeline
+        ↓
+Service Connection
+        ↓
+Service Principal
+        ↓
+Azure Subscription
+        ↓
+Storage Account / Key Vault / AKS
+If Lead Asks
+
+What is used behind the Service Connection?
+
+Answer:
+
+A Service Principal is used behind the Service Connection to authenticate Azure DevOps with Azure resources.
+
+Short Answer (30 Seconds)
+
+Service Connection is a secure bridge between Azure DevOps and Azure. It uses a Service Principal to authenticate and allows pipelines to access Azure resources such as Key Vault, Storage Accounts, AKS, and Resource Groups.
+
+✅ Your sentence:
+
+"Service Connection is a bridge between Azure DevOps and Azure"
+
+is correct. Just add:
+
+"It uses a Service Principal for authentication and secure access to Azure resources."
