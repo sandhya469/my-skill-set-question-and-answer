@@ -1,0 +1,60 @@
+What is kill?
+
+kill is used to terminate a running process gracefully. It sends a signal to the process and allows it to stop properly.
+
+Example:
+
+kill 1234
+What is kill -9?
+
+kill -9 forcefully terminates a process immediately without allowing it to clean up resources.
+
+Example:
+
+kill -9 1234
+Interview Answer
+
+kill gracefully stops a process, whereas kill -9 forcefully terminates a process when it is not responding.
+
+Easy Way to Remember
+kill     = Normal Stop
+kill -9  = Force Stop
+Real-Time Example
+
+Suppose an application or script is stuck:
+
+Check process:
+
+ps -ef | grep python
+
+Kill process:
+
+kill 1234
+
+If it doesn't stop:
+
+kill -9 1234
+Next Interview Question
+
+What is a process?
+
+A simple answer would be:
+
+A process is a running instance of a program. Every running application in Linux has a unique Process ID (PID).
+
+Example:
+
+nginx
+docker
+java
+python
+bash
+
+These are all processes when they are running.
+
+✅ So remember:
+
+Process = Running program
+PID = Process ID
+kill = Graceful stop
+kill -9 = Force stop
