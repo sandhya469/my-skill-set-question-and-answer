@@ -1,0 +1,100 @@
+What is Git?
+
+Your answer was close.
+
+Better Answer
+
+Git is a distributed version control system used to track source code changes. It helps multiple developers work on the same project, maintain code history, and manage versions of the application.
+
+Project-Based Answer
+
+In my project, we use Git to manage source code, track changes, maintain version history, and collaborate with developers.
+
+10. Difference Between Git and GitHub?
+Answer
+Git	GitHub
+Version Control System	Repository Hosting Platform
+Installed on local machine	Cloud-based service
+Tracks code changes	Stores Git repositories
+Used for commit, branch, merge	Used for collaboration and Pull Requests
+Interview Answer
+
+Git is a version control system used to track source code changes, whereas GitHub is a cloud platform used to host and manage Git repositories.
+
+11. Explain Git Commands
+git clone
+git clone <repository-url>
+
+Used to copy a remote repository to the local machine.
+
+git pull
+git pull
+
+Used to download the latest changes from the remote repository to the local repository.
+
+Easy Remember
+
+Remote → Local
+git push
+git push
+
+Used to upload local changes to the remote repository.
+
+Easy Remember
+
+Local → Remote
+git commit
+git commit -m "message"
+
+Used to save changes in the local repository with a message.
+
+Example:
+
+git commit -m "Added deployment changes"
+Full Flow
+git clone
+git checkout -b feature
+make changes
+git add .
+git commit -m "changes"
+git push
+create PR
+12. What is a Pull Request (PR)?
+
+Your answer:
+
+When we merge to main branch then we create PR.
+
+Small correction:
+
+Correct Answer
+
+A Pull Request is a request to merge code changes from one branch to another branch. Before merging, team members review the code, provide comments, and approve the changes.
+
+Example
+feature branch
+      ↓
+Pull Request
+      ↓
+Code Review
+      ↓
+Approval
+      ↓
+main branch
+Project-Based Answer
+
+In my project, developers create feature branches and make code changes. After testing, they raise a Pull Request to merge changes into the main branch. The code is reviewed and approved before merging.
+
+Quick Interview Round
+
+Q: What is the difference between git pull and git push?
+
+A:
+
+git pull downloads changes from remote to local, whereas git push uploads local changes to the remote repository.
+
+Q: Why do we use Pull Requests?
+
+A:
+
+To perform code reviews, maintain code quality, and control code changes before merging into the main branch.
