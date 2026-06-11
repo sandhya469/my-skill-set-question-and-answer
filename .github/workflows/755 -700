@@ -1,0 +1,56 @@
+chmod 755
+
+You said:
+
+rwxrw-rw-
+
+❌ Not correct.
+
+Correct:
+
+rwxr-xr-x
+
+Breakdown:
+
+7 = rwx = Read + Write + Execute
+5 = r-x = Read + Execute
+5 = r-x = Read + Execute
+
+Meaning:
+
+Owner  = rwx
+Group  = r-x
+Others = r-x
+chmod 700
+
+You said:
+
+rwx------
+
+✅ Correct
+
+Breakdown:
+
+7 = rwx
+0 = ---
+0 = ---
+
+Meaning:
+
+Owner  = rwx
+Group  = ---
+Others = ---
+
+Only the owner can access the file.
+
+Easy Trick
+4 = Read (r)
+2 = Write (w)
+1 = Execute (x)
+
+Examples:
+
+7 = 4+2+1 = rwx
+6 = 4+2   = rw-
+5 = 4+1   = r-x
+4 = 4     = r--
