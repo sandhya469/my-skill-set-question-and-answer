@@ -1,0 +1,20 @@
+Question 1: What is Azure DevOps and which services have you used?
+
+Better Answer:
+
+Azure DevOps is a platform used for source code management, CI/CD automation, project tracking, testing, and deployment management.
+
+I have worked with Azure DevOps services such as:
+
+Repos – for source code management using Git.
+Pipelines – for CI/CD automation using Classic and YAML pipelines.
+Boards – for tracking user stories, tasks, and bugs.
+Artifacts – for storing and sharing build packages.
+Test Plans – for test case management.
+
+In my project, I mainly worked with Repos, Pipelines, Variable Groups, Environments, Service Connections, Azure Key Vault integration, and deployment automation.
+
+Short Version (30 seconds)
+
+Azure DevOps is a platform used for source code management, CI/CD pipelines, project tracking, and deployment automation. 
+I have worked mainly with Azure Repos, Azure Pipelines, Boards, Variable Groups, Environments, and Service Connections for application deployments.
