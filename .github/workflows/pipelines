@@ -1,0 +1,72 @@
+. What is CI and CD?
+Better Answer
+
+CI stands for Continuous Integration. It is the process of automatically building and validating code whenever developers commit or merge code into the repository.
+
+CD stands for Continuous Delivery or Continuous Deployment. It is the process of automatically deploying the application to different environments such as Dev, QA, Staging, and Production after a successful build.
+
+Short Answer
+
+CI focuses on build and validation, whereas CD focuses on deployment and release automation.
+
+7. Explain your complete CI/CD pipeline flow.
+Project-Based Answer
+
+In my project, whenever a developer makes changes to Markdown files and merges them into the main branch, the Azure DevOps pipeline is triggered.
+
+During the CI process:
+
+Source code is pulled from Azure Repos/Git.
+Python and MkDocs/Zensical are installed.
+The mkdocs.yml file is read.
+Markdown files are converted into HTML files.
+The generated HTML files are published as a WebContent artifact.
+
+During the CD process:
+
+The deployment stage downloads the WebContent artifact.
+The pipeline retrieves the SAS token from Azure Key Vault.
+The Azure DevOps agent public IP is temporarily whitelisted in the Storage Account firewall.
+HTML files are uploaded to Azure File Share.
+The firewall rule is removed.
+AKS mounts the File Share through PVC and serves the updated Help Pages to users.
+8. What pipeline failures have you faced and how did you resolve them?
+Strong Answer
+
+Some common pipeline issues I faced are:
+
+Storage Firewall Issue
+
+The agent IP was blocked by the Storage Account firewall.
+Resolved by temporarily whitelisting the Azure DevOps agent IP.
+
+Key Vault Access Issue
+
+The Service Principal did not have permission to access secrets.
+Resolved by verifying Key Vault permissions and Service Connection access.
+
+Expired SAS Token
+
+Upload failed because the SAS token had expired.
+Resolved by generating a new SAS token and updating it in Key Vault.
+
+Artifact Download Failure
+
+Deployment stage could not find the WebContent artifact.
+Resolved by verifying the PublishBuildArtifacts task and artifact name.
+
+YAML Syntax Errors
+
+Pipeline failed due to indentation or syntax issues.
+Resolved by validating and correcting the YAML file.
+
+Whenever a pipeline fails, I first check the Azure DevOps logs, identify the failed task, analyze the error message, and then verify variables, service connections, permissions, and network access before rerunning the pipeline.
+
+Interview Tip
+
+For CI/CD, remember this one-liner:
+
+CI = Build + Test + Validation
+CD = Release + Deployment
+
+That line alone answers 50% of CI/CD interview questions. ✅
