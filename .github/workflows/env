@@ -1,0 +1,36 @@
+What are Environments in Azure DevOps?
+Better Answer
+
+Environments in Azure DevOps represent deployment targets such as Dev, QA, Staging, PreProd, and Production. They help track deployment history, monitor deployments, and control approvals before deploying to higher environments.
+
+Project-Based Answer
+
+In my project, we use environments such as Dev, QA, Staging, and Production. Azure DevOps tracks which version was deployed, when it was deployed, and who deployed it. We also use approvals before deploying to higher environments like Production.
+
+Why do we use Environments?
+Deployment tracking
+Deployment history
+Approval workflows
+Environment-specific deployments
+Better release management
+Short Interview Answer (30 Seconds)
+
+Environments are deployment targets in Azure DevOps. They help track deployments, maintain deployment history, and manage approvals before deploying applications to environments such as Dev, QA, Staging, and Production.
+
+If Lead Asks
+
+What is the difference between Variable Groups and Environments?
+
+Answer:
+
+Variable Groups store reusable configuration values such as Storage Account names and Resource Group names. Environments represent deployment targets and help track deployments and approvals.
+
+✅ Your original answer was correct:
+
+"Tracks deployments and controls approvals"
+
+Just add:
+
+"Environments represent deployment targets such as Dev, QA, and Production"
+
+and it becomes a strong interview answer.
