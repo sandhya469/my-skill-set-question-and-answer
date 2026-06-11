@@ -1,0 +1,55 @@
+What is sudo?
+
+sudo = Super User Do
+
+sudo allows a normal user to execute commands with administrator (root) privileges.
+
+Why do we use sudo?
+
+Some tasks require admin permissions:
+
+Install software
+Create users
+Delete users
+Change ownership
+Update packages
+Restart services
+
+Without sudo:
+
+apt update
+
+May fail with:
+
+Permission denied
+
+With sudo:
+
+sudo apt update
+
+Works successfully.
+
+Real Examples
+
+Create user:
+
+sudo adduser devuser
+
+Change owner:
+
+sudo chown sandhya file.txt
+
+Install package:
+
+sudo apt install nginx
+Interview Answer
+
+sudo stands for Super User Do. It is used to execute commands with administrator privileges. We use sudo for tasks such as user management, package installation, permission changes, and system administration.
+
+Project-Based Answer
+
+During Linux user provisioning, I used sudo commands to create users, manage groups, assign permissions, and update ownership of files and directories.
+
+One-Line Answer
+
+sudo allows a normal user to perform administrative tasks with elevated privileges.
