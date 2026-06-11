@@ -1,0 +1,28 @@
+berships using Linux commands.
+
+Help Page Deployment Project
+
+I used shell scripts in Azure DevOps pipelines to perform deployment activities such as downloading artifacts,
+retrieving configuration values, validating files, whitelisting Azure DevOps agent IPs, uploading HTML files to Azure File Share, and cleaning up firewall rules after deployment.
+
+Commands I Frequently Used
+pwd
+ls -la
+mkdir
+touch
+cat
+grep
+chmod
+chown
+id
+groups
+ps -ef
+kill
+Strong Interview Answer
+
+I have used shell scripting for Linux user provisioning, permission management, deployment automation, validation, troubleshooting,
+and Azure DevOps pipeline automation. One example is the create-users.sh script, which automated user creation, group assignment, and permission handling based on RBAC requirements.
+
+One-Line Answer
+
+Shell scripting helps automate repetitive Linux and Azure DevOps tasks, reducing manual effort and improving operational efficiency.
