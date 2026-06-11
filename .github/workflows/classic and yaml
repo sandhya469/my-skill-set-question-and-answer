@@ -1,0 +1,36 @@
+What is the difference between Classic Pipeline and YAML Pipeline?
+
+This is a very common Azure DevOps interview question.
+
+Classic Pipeline	YAML Pipeline
+Created using Azure DevOps UI	Created using YAML code
+Configuration stored in Azure DevOps	Configuration stored in Git repository
+Drag-and-drop tasks	Pipeline as Code
+Harder to track changes	Easy to track changes using Git
+Less reusable	More reusable and version controlled
+Good for beginners	Preferred in modern DevOps projects
+Interview Answer
+
+Classic Pipeline is created and managed through the Azure DevOps graphical user interface using drag-and-drop tasks. YAML Pipeline is defined using code in a .yml file and stored in a Git repository. 
+YAML pipelines support version control, reusability, and automation, which makes them the preferred approach in modern DevOps environments.
+
+Project-Based Answer
+
+In my project, we used both Classic and YAML pipelines. Classic pipelines were used in some legacy applications, while YAML pipelines were used for new implementations because they are easier to maintain, version control, and reuse across environments.
+
+Example YAML Pipeline
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo "Build Started"
+If Lead Asks
+
+Which one do you prefer?
+
+Answer:
+
+I prefer YAML pipelines because they are stored in Git, support version control, code reviews, and are easier to maintain and reuse across multiple proj
