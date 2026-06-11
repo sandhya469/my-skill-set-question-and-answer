@@ -1,0 +1,59 @@
+Question: What command shows the current logged-in user?
+
+You answered:
+
+id
+
+id works, but the best answer is:
+
+whoami
+
+Example:
+
+whoami
+
+Output:
+
+krant
+Interview Answer
+
+whoami displays the current logged-in user.
+
+Question: What command shows UID and GID?
+
+Correct answer:
+
+id
+
+Example:
+
+id
+
+Output:
+
+uid=1000(krant) gid=1000(krant)
+Interview Answer
+
+The id command displays User ID (UID), Group ID (GID), and group memberships.
+
+About /etc/passwd and /etc/group
+
+These commands are used to view users and groups:
+
+cat /etc/passwd
+
+Displays all users on the Linux system.
+
+cat /etc/group
+
+Displays all groups on the Linux system.
+
+Quick Revision
+Question	Answer
+Current logged-in user	whoami
+Show UID and GID	id
+Show all users	cat /etc/passwd
+Show all groups	cat /etc/group
+Change permissions	chmod
+Change ownership	chown
+Admin privileges	sudo
