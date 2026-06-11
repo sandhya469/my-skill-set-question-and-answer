@@ -1,0 +1,39 @@
+Question: What are Variable Groups and why do we use them?
+Better Answer
+
+Variable Groups are a shared collection of variables stored in the Azure DevOps Library. They are used to manage and reuse common variables across multiple pipelines without hardcoding values.
+
+Project-Based Answer
+
+In my project, we use a Variable Group called help-page-dev. It contains common values such as:
+
+Storage Account Name
+Resource Group Name
+File Share Name
+Environment-specific configurations
+
+Instead of hardcoding these values in the YAML pipeline, we store them in Variable Groups and reference them whenever required.
+
+Why do we use Variable Groups?
+
+Variable Groups improve reusability, centralize configuration management, reduce hardcoding, and make pipelines easier to maintain.
+
+Example
+
+Instead of:
+
+storageAccount: mystorage
+resourceGroup: myrg
+
+We store them in Variable Group:
+
+help-page-dev
+
+Then the pipeline automatically reads:
+
+Storage Account
+Resource Group
+File Share
+Short Interview Answer
+
+Variable Groups are shared collections of variables stored in Azure DevOps Library. They help us reuse common values such as Storage Account, Resource Group, and File Share names across multiple pipelines and avoid hardcoding.
