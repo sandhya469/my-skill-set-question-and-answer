@@ -1,0 +1,29 @@
+Difference between chmod and chown?
+Better Answer
+
+chmod is used to modify file or directory permissions such as Read, Write, and Execute permissions.
+
+chown is used to change the ownership of a file or directory by assigning it to a different user or group.
+
+Example
+chmod
+chmod 755 file.txt
+
+Result:
+
+rwxr-xr-x
+
+Changes permissions.
+
+chown
+chown sandhya file.txt
+
+Changes owner from one user to another.
+
+Project-Based Answer
+
+During Linux user provisioning, I used chmod to assign appropriate file and directory permissions and chown to set the correct ownership for users, groups, and home directories.
+
+One-Line Interview Answer
+
+chmod changes permissions, whereas chown changes ownership.
